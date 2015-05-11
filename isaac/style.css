@@ -1,6 +1,70 @@
 div#display{
 	border-style: solid;
+	border-color: red;
+	background-color: grey;
+
 	width: 600px;
 	height: 200px;
+
 	overflow: scroll;
+
+	margin-left: auto;
+	margin-right: auto; 
+
+
+}
+
+div#active-tools-div,div#Accessories{
+	width: 80%;
+	height: auto;
+
+	margin-top: 4px;
+	margin-bottom: 4px;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div#atlas{
+	height: auto;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+body{
+	
+}
+
+body div{
+	z-index: 50;
+}
+
+img.active_tools,img.Accessories{
+	max-height: 24px;
+	max-width: 24px;
+	width: 24px;
+	margin: 1px;
+}
+
+img#bgimg{
+	position:absolute;
+	left:0px;
+	top:0px;
+	height: 100%;
+	width: 100%;
+	z-index:-12;
+}
+
+img#paper{
+	height: 80%;
+	width: 100%;	
+}
+
+div#divpaper{
+	position: absolute;
+	left: 23%;
+	top: 3%;
+	z-index: -1;
+	display: none;
 }
