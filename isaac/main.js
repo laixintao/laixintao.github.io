@@ -2,7 +2,6 @@ var active_tools;
 var Accessories;
 
 $().ready(function(){
-	
 	active_tools = get_active_tools_atlas();
 	Accessories = get_Accessories();
 	add_Listener();
@@ -15,6 +14,10 @@ function add_Listener(){
 
 	$("#Accessories > img").click(function(){
 	on_Click_Listener(this);
+	});
+
+	$("#close > img").click(function(){
+		$("#board").css("display","none");
 	});
 }
 
@@ -39,6 +42,7 @@ function on_Click_Listener(myclick){
 
 	$("#display > p").detach();  //先移除之前的元素，在添加新的
 	$("#display").append(str);
+	$("#board").css("display","inline");
 }
 
 
