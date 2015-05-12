@@ -28,13 +28,16 @@ div#isaac{
 	margin-right: auto;
 	margin-left: auto;
 	width: 450px;
+	position: absolute;
+	left: 33%;
+	top: 1%;
 }
 
 img#isaac-tittle{
 	height: auto;
 	width: 450px;
 }
-div#active-tools-div,div#Accessories{
+div#active-tools-div{
 	width: 80%;
 	height: auto;
 
@@ -46,22 +49,19 @@ div#active-tools-div,div#Accessories{
 }
 
 div#atlas{
-
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 5%;
 	padding-left: 4.6%;
 	padding-right: 4.6%;
 	padding-top: 7%;
 	padding-bottom: 6%;
 
 	background-image: url("graphics/room.png");
-	background-size: 1002px 580px;
+	background-size: 1100px 650px;
 	background-repeat: none;
 	height: auto;
-	width: 900px;
-
-	
-
+	width: 990px;
 }
 
 body{
@@ -73,9 +73,9 @@ body div{
 }
 
 img.active_tools,img.Accessories{
-	max-height: 24px;
-	max-width: 24px;
-	width: 24px;
+	max-height: 23px;
+	max-width: 23px;
+	width: 23px;
 	margin: 1px;
 }
 
