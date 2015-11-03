@@ -7,12 +7,12 @@
 
 # Site settings
 title: Toprogrammer
-email: laixintao1995@163.com
+email: laixintao1995[-at-]①⑥③.com
 description: > # this means to ignore newlines until "baseurl:"
     Dreistigkeit siegt.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http:/programmer.top" # the base hostname & protocol for your site
-twitter_username: laixintao
+url: "http://programmer.top" # the base hostname & protocol for your site
+twitter_username: SinpeachLai
 github_username:  laixintao
 
 # Build settings
