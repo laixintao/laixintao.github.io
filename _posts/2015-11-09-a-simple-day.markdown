@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Simple Day"
-date:   2015-11-07 11:01:40 +0800
+date:   2015-11-09 11:01:40 +0800
 categories: life
 ---
 

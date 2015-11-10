@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "George Boole Was a Genius"
-date:   2015-11-04 11:01:40 +0800
+date:   2015-11-05 11:01:40 +0800
 categories: genius
 ---
 
