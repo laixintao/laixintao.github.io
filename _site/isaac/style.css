@@ -1,0 +1,112 @@
+div#board{
+	position: absolute;
+	left: 30%;
+	top: 17%;
+	width: 60%;
+	height: auto;
+	display: none;
+}
+
+div#display{
+	font-family:arial, sans-serif,"微软雅黑" ;
+	background-image: url("graphics/displaybg.png");
+
+	float: left;
+	width: 70%;
+	margin: 0 auto;
+	
+	padding-left: 8px;
+	padding-top: 5px;
+
+	border-style: solid;
+	border-color: #F7D52B;
+	/*color: #8DB2C9;*/
+
+}
+div#close{
+	margin-right: 0;
+	float: right;
+	
+}
+
+div#display{
+	-moz-box-shadow: 10px 10px 5px #553c28; /* 老的 Firefox */
+	box-shadow: 10px 10px 20px #000000;
+}
+
+
+div#isaac{
+	margin-right: auto;
+	margin-left: auto;
+	width: 450px;
+	position: absolute;
+	left: 35%;
+	top: 1%;
+}
+
+img#isaac-tittle{
+	height: auto;
+	width: 450px;
+}
+div#active-tools-div,div#Accessories,div#shipin{
+	width: 80%;
+	height: auto;
+
+	margin-top: 4px;
+	margin-bottom: 4px;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div#cards{
+	text-align:center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div#atlas{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1.5%;
+	padding-left: 4.6%;
+	padding-right: 4.6%;
+	padding-top: 7%;
+	padding-bottom: 6%;
+
+	background-image: url("graphics/room.png");
+	background-size: 1190px 688px;
+	background-repeat: none;
+	height: auto;
+	width: 1040px;
+}
+
+body{
+	
+}
+
+body div{
+	z-index: 50;
+}
+
+img.active_tools,img.Accessories,img.shipin{
+	max-height: 23px;
+	max-width: 23px;
+	width: 23px;
+	margin: 1px;
+}
+
+img.cards{
+	width: 23px;
+	margin: 1px;
+}
+
+img#bgimg{
+	position:absolute;
+	left:0px;
+	top:0px;
+	height: 100%;
+	width: 100%;
+	z-index:-12;
+}
+
