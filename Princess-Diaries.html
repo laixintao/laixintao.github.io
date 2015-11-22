@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:4000/ -->
+<html><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Princess Diaries</title>
+  <meta name="description" content="This is just another Jekyll theme.
+">
+  <link rel="stylesheet" href="./Princess-Diaries_files/font-awesome.min.css">
+  <link rel="stylesheet" href="./Princess-Diaries_files/main.css">
+  <link rel="canonical" href="http://kawabangga.com/">
+  <link rel="alternate" type="application/rss+xml" title="Princess Diaries" href="http://kawabangga.com/feed.xml">
+<style type="text/css" adt="123"></style><script>if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+(function() {
+    Function.prototype.bind = function() {
+        var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
+        return function() {
+            return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
+        };
+    };
+    function A() {}
+    A.prototype = {
+        rules: {
+            /*'youku_loader': {
+                'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                'replace': 'http://swf.adtchrome.com/loader.swf'
+            },
+            'youku_out': {
+                'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+            },*/
+            'pps_pps': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+            },
+            /*'iqiyi_1': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },
+            'iqiyi_2': {
+                'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },*/
+            'ku6': {
+                'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+            },
+            'ku6_topic': {
+                'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+            },
+            'sohu': {
+                'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu2':{
+                'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu_share': {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+            },
+            'sohu_sogou' : {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+            },
+            /*'letv': {
+                'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_topic': {
+                'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_duowan': {
+                'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                'replace': 'http://yuntv.letv.com/bcloud.swf'
+            },*/
+            '17173_in':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+            },
+            '17173_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+            },
+            '17173_live':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+            },
+            '17173_live_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+            }
+        },
+        _done: null,
+        get done() {
+            if(!this._done) {
+                this._done = new Array();
+            }
+            return this._done;
+        },
+        addAnimations: function() {
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+            document.getElementsByTagName('head')[0].appendChild(style);
+        },
+        animationsHandler: function(e) {
+            if(e.animationName === 'playerInserted') {
+                this.replace(e.target);
+            }
+        },
+        replace: function(elem) {
+            if(this.done.indexOf(elem) != -1) return;
+            this.done.push(elem);
+            var player = elem.data || elem.src;
+            if(!player) return;
+            var i, find, replace = false;
+            for(i in this.rules) {
+                find = this.rules[i]['find'];
+                if(find.test(player)) {
+                    replace = this.rules[i]['replace'];
+                    if('function' === typeof this.rules[i]['preHandle']) {
+                        this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                    }else{
+                        this.reallyReplace.bind(this, elem, find, replace)();
+                    }
+                    break;
+                }
+            }
+        },
+        reallyReplace: function(elem, find, replace) {
+            elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+            var b = elem.querySelector("param[name='movie']");
+            this.reloadPlugin(elem);
+        },
+        reloadPlugin: function(elem) {
+            var nextSibling = elem.nextSibling;
+            var parentNode = elem.parentNode;
+            parentNode.removeChild(elem);
+            var newElem = elem.cloneNode(true);
+            this.done.push(newElem);
+            if(nextSibling) {
+                parentNode.insertBefore(newElem, nextSibling);
+            } else {
+                parentNode.appendChild(newElem);
+            }
+        },
+        init: function() {
+            var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+            /*if(desc.indexOf('adobe')>-1){
+                delete this.rules["iqiyi_1"];
+                delete this.rules["iqiyi_2"];
+            }*/
+            if(document.URL.indexOf('tv.sohu.com')<=0){
+                delete this.rules["sohu"];
+            }
+            var handler = this.animationsHandler.bind(this);
+            document.body.addEventListener('webkitAnimationStart', handler, false);
+            document.body.addEventListener('msAnimationStart', handler, false);
+            document.body.addEventListener('oAnimationStart', handler, false);
+            document.body.addEventListener('animationstart', handler, false);
+            this.addAnimations();
+        }
+    };
+    new A().init();
+})();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+// 20150108
+setTimeout(function(){
+    if (document.URL.indexOf('www.baidu.com') >= 0) {
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.removeAttribute("style")
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+    }
+}, 400);
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+
+<body>
+
+<div class="main">
+
+    
+<header class="sider">
+
+    <div class="avatar">
+        <div class="avatar-image"></div>
+    </div>
+
+    <div class="sider-box">
+
+        <div class="site-titlediv">
+            <a class="site-title" href="./Princess-Diaries_files/Princess-Diaries.html">
+                Princess Diaries
+            </a>
+        </div>
+        <div class="description">
+            This is just another Jekyll theme.
+
+        </div>
+        <div class="social-link">
+            
+            <a href="http://kawabangga.com/">
+                <i class="icon-large icon-globe"></i>
+            </a>
+            
+            
+            <a href="https://twitter.com/SinpeachLai">
+                <i class="icon-large icon-twitter"></i>
+            </a>
+            
+            
+            <a href="https://www.facebook.com/profile.php?id=100008578420735">
+                <i class="icon-large icon-facebook"></i>
+            </a>
+            
+            
+            <a href="https://github.com/laixintao">
+                <i class="icon-large icon-github"></i>
+            </a>
+            
+        </div>
+        <div class="pages">
+            
+            
+            <a class="page-link" href="http://127.0.0.1:4000/about/">FAQ</a>
+            
+            
+            
+            <a class="page-link" href="http://127.0.0.1:4000/about/">Linux</a>
+            
+            
+            
+            <a class="page-link" href="http://127.0.0.1:4000/about/">Python</a>
+            
+            
+            
+            <a class="page-link" href="http://127.0.0.1:4000/about/">MORE</a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <a class="page-link" href="http://127.0.0.1:4000/about/">About</a>
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <div class="rss">
+                <a href="http://127.0.0.1:4000/feed.xml"><i class="icon-rss icon-large"></i>  RSS</a>
+        </div>
+    </div>
+
+</header>
+
+
+    <div class="page-content">
+        <div class="page-container">
+                <div class="post-list">
+    
+    <div class="content">
+        <h2>
+            <a class="post-link" href="http://127.0.0.1:4000/theme/2015/11/17/princess-diaries.html">
+                公主日记
+            </a>
+        </h2>
+
+        <div class="post-content">
+            <p>这是一篇测试文章</p>
+
+<h1 id="cmd-markdown-">欢迎使用 Cmd Markdown 编辑阅读器</h1>
+
+<hr>
+
+<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+
+<blockquote>
+  <ul>
+    <li>整理知识，学习笔记</li>
+    <li>发布日记，杂文，所见所想</li>
+    <li>撰写发布技术文稿（代码支持）</li>
+    <li>撰写发布学术论文（LaTeX 公式支持）</li>
+  </ul>
+</blockquote>
+
+<p><img src="./Princess-Diaries_files/logo.png" alt="cmd-markdown-logo"></p>
+
+<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
+
+<h3 id="windowsmaclinux-httpswwwzybuluocomcmd"><a href="https://www.zybuluo.com/cmd/">Windows/Mac/Linux 全平台客户端</a></h3>
+
+<blockquote>
+  <p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="markdown">什么是 Markdown</h2>
+
+<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+
+<h3 id="todo-httpswwwzybuluocommdeditorurlhttpswwwzybuluocomstaticeditormd-helpmarkdown13--todo-">1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表">Todo 列表</a></h3>
+
+<ul>
+  <li>[ ] 支持以 PDF 格式导出文稿</li>
+  <li>[ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+  <li>[x] 新增 Todo 列表功能</li>
+  <li>[x] 修复 LaTex 公式渲染问题</li>
+  <li>[x] 新增 LaTex 公式编号功能</li>
+</ul>
+
+<h3 id="latex">2. 书写一个质能守恒公式<sup id="fnref:LaTeX"><a href="http://127.0.0.1:4000/#fn:LaTeX" class="footnote">1</a></sup></h3>
+
+<script type="math/tex; mode=display">E=mc^2</script>
+
+<h3 id="code">3. 高亮一段代码<sup id="fnref:code"><a href="http://127.0.0.1:4000/#fn:code" class="footnote">2</a></sup></h3>
+
+<p>```python
+@requires_authorization
+class SomeClass:
+    pass</p>
+
+<p>if <strong>name</strong> == ‘<strong>main</strong>’:
+    # A comment
+    print ‘hello world’
+```</p>
+
+<h3 id="httpswwwzybuluocommdeditorurlhttpswwwzybuluocomstaticeditormd-helpmarkdown7-">4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图">流程图</a></h3>
+
+<p>```flow
+st=&gt;start: Start
+op=&gt;operation: Your Operation
+cond=&gt;condition: Yes or No?
+e=&gt;end</p>
+
+<p>st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+```</p>
+
+<h3 id="httpswwwzybuluocommdeditorurlhttpswwwzybuluocomstaticeditormd-helpmarkdown8-">5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图">序列图</a></h3>
+
+<p><code>seq
+Alice-&gt;Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob--&gt;Alice: I am good thanks!
+</code></p>
+
+<h3 id="section">6. 绘制表格</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>项目</th>
+      <th style="text-align: right">价格</th>
+      <th style="text-align: center">数量</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>计算机</td>
+      <td style="text-align: right">$1600</td>
+      <td style="text-align: center">5</td>
+    </tr>
+    <tr>
+      <td>手机</td>
+      <td style="text-align: right">$12</td>
+      <td style="text-align: center">12</td>
+    </tr>
+    <tr>
+      <td>管线</td>
+      <td style="text-align: right">$1</td>
+      <td style="text-align: center">234</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-1">7. 更详细语法说明</h3>
+
+<p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
+
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+
+<hr>
+
+<h2 id="cmd-markdown">什么是 Cmd Markdown</h2>
+
+<p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+
+<h3 id="section-2">1. 实时同步预览</h3>
+
+<p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+
+<h3 id="section-3">2. 编辑工具栏</h3>
+
+<p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+
+<p><img src="./Princess-Diaries_files/toolbar-editor.png" alt="tool-editor"></p>
+
+<h3 id="section-4">3. 编辑模式</h3>
+
+<p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右测的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+
+<h3 id="section-5">4. 实时的云端文稿</h3>
+
+<p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+
+<h3 id="section-6">5. 离线模式</h3>
+
+<p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
+
+<h3 id="section-7">6. 管理工具栏</h3>
+
+<p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+
+<p><img src="./Princess-Diaries_files/toolbar-manager.jpg" alt="tool-manager"></p>
+
+<p>通过管理工具栏可以：</p>
+
+<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享
+<i class="icon-file"></i> 新建：开始撰写一篇新的文稿
+<i class="icon-trash"></i> 删除：删除当前的文稿
+<i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地
+<i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作
+<i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
+
+<h3 id="section-8">7. 阅读工具栏</h3>
+
+<p><img src="./Princess-Diaries_files/toolbar-reader.jpg" alt="tool-manager"></p>
+
+<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
+
+<p>工具栏上的五个图标依次为：</p>
+
+<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落
+<i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置
+<i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！
+<i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验
+<i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
+
+<h3 id="section-9">8. 阅读模式</h3>
+
+<p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
+
+<h3 id="section-10">9. 标签、分类和搜索</h3>
+
+<p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
+
+<p>标签： 未分类</p>
+
+<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
+
+<p><img src="./Princess-Diaries_files/file-list.png" alt="file-list"></p>
+
+<h3 id="section-11">10. 文稿发布和分享</h3>
+
+<p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+
+<hr>
+
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+
+<p>作者 <a href="http://weibo.com/ghosert">@ghosert</a>   <br>
+2015 年 06月 15日</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:LaTeX">
+      <p>支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax</a> 参考更多使用方法。 <a href="http://127.0.0.1:4000/#fnref:LaTeX" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:code">
+      <p>代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。 <a href="http://127.0.0.1:4000/#fnref:code" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+        </div>
+
+        <div class="categories">
+            <i class="icon-folder-open icon-large"></i>
+            Theme
+        </div>
+        <div class="tags">
+            
+                <i class="icon-tags icon-large"></i>
+                
+                jekyll
+                
+                update
+                
+                theme
+                
+            
+        </div>
+        <div class="post-meta">
+            <div class="post-meta-data">
+                <i class="icon-pencil icon-large"></i>
+                Nov 17, 2015
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2>
+            <a class="post-link" href="http://127.0.0.1:4000/theme/2015/11/17/princess-diaries-en.html">
+                Princess Diaries
+            </a>
+        </h2>
+
+        <div class="post-content">
+            <p>This post is for testing.</p>
+
+<h1 id="dillinger">Dillinger</h1>
+
+<p>Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.</p>
+
+<ul>
+  <li>Type some Markdown on the left</li>
+  <li>See HTML in the right</li>
+  <li>Magic</li>
+</ul>
+
+<p>Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As <a href="http://daringfireball.net/">John Gruber</a> writes on the <a href="http://daringfireball.net/projects/markdown/">Markdown site</a></p>
+
+<blockquote>
+  <p>The overriding design goal for Markdown’s
+formatting syntax is to make it as readable
+as possible. The idea is that a
+Markdown-formatted document should be
+publishable as-is, as plain text, without
+looking like it’s been marked up with tags
+or formatting instructions.</p>
+</blockquote>
+
+<p>This text you see here is <em>actually</em> written in Markdown! To get a feel for Markdown’s syntax, type some text into the left window and watch the results in the right.</p>
+
+<h3 id="version">Version</h3>
+<p>3.2.0</p>
+
+<h3 id="tech">Tech</h3>
+
+<p>Dillinger uses a number of open source projects to work properly:</p>
+
+<ul>
+  <li><a href="http://angularjs.org/">AngularJS</a> - HTML enhanced for web apps!</li>
+  <li><a href="http://ace.ajax.org/">Ace Editor</a> - awesome web-based text editor</li>
+  <li><a href="https://github.com/chjj/marked">Marked</a> - a super fast port of Markdown to JavaScript</li>
+  <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> - great UI boilerplate for modern web apps</li>
+  <li><a href="http://nodejs.org/">node.js</a> - evented I/O for the backend</li>
+  <li><a href="http://expressjs.com/">Express</a> - fast node.js network app framework <a href="http://twitter.com/tjholowaychuk">@tjholowaychuk</a></li>
+  <li><a href="http://gulpjs.com/">Gulp</a> - the streaming build system</li>
+  <li><a href="https://github.com/madrobby/keymaster">keymaster.js</a> - awesome keyboard handler lib by <a href="http://twitter.com/thomasfuchs">@thomasfuchs</a></li>
+  <li><a href="http://jquery.com/">jQuery</a> - duh</li>
+</ul>
+
+<p>And of course Dillinger itself is open source with a <a href="https://github.com/joemccann/dillinger">public repository</a>
+ on GitHub.</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>You need Gulp installed globally:</p>
+
+<p><code>sh
+$ npm i -g gulp
+</code></p>
+
+<p><code>sh
+$ git clone [git-repo-url] dillinger
+$ cd dillinger
+$ npm i -d
+$ mkdir -p downloads/files/{md,html,pdf}
+$ gulp build --prod
+$ NODE_ENV=production node app
+</code></p>
+
+<h3 id="plugins">Plugins</h3>
+
+<p>Dillinger is currently extended with the following plugins</p>
+
+<ul>
+  <li>Dropbox</li>
+  <li>Github</li>
+  <li>Google Drive</li>
+  <li>OneDrive</li>
+</ul>
+
+<p>Readmes, how to use them in your own application can be found here:</p>
+
+<ul>
+  <li><a href="https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md">plugins/dropbox/README.md</a></li>
+  <li><a href="https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md">plugins/github/README.md</a></li>
+  <li><a href="https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md">plugins/googledrive/README.md</a></li>
+  <li><a href="https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md">plugins/onedrive/README.md</a></li>
+</ul>
+
+<h3 id="development">Development</h3>
+
+<p>Want to contribute? Great!</p>
+
+<p>Dillinger uses Gulp + Webpack for fast developing.
+Make a change in your file and instantanously see your updates!</p>
+
+<p>Open your favorite Terminal and run these commands.</p>
+
+<p>First Tab:
+<code>sh
+$ node app
+</code></p>
+
+<p>Second Tab:
+<code>sh
+$ gulp watch
+</code></p>
+
+<p>(optional) Third:
+<code>sh
+$ karma start
+</code></p>
+
+<h3 id="todos">Todos</h3>
+
+<ul>
+  <li>Write Tests</li>
+  <li>Rethink Github Save</li>
+  <li>Add Code Comments</li>
+  <li>Add Night Mode</li>
+</ul>
+
+<h2 id="license">License</h2>
+
+<p>MIT</p>
+
+<p><strong>Free Software, Hell Yeah!</strong></p>
+
+
+        </div>
+
+        <div class="categories">
+            <i class="icon-folder-open icon-large"></i>
+            Theme
+        </div>
+        <div class="tags">
+            
+                <i class="icon-tags icon-large"></i>
+                
+                jekyll
+                
+                update
+                
+                theme
+                
+            
+        </div>
+        <div class="post-meta">
+            <div class="post-meta-data">
+                <i class="icon-pencil icon-large"></i>
+                Nov 17, 2015
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2>
+            <a class="post-link" href="http://127.0.0.1:4000/jekyll/update/2015/11/16/welcome-to-jekyll.html">
+                Welcome to Jekyll!
+            </a>
+        </h2>
+
+        <div class="post-content">
+            <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+        </div>
+
+        <div class="categories">
+            <i class="icon-folder-open icon-large"></i>
+            jekyllupdate
+        </div>
+        <div class="tags">
+            
+                <i class="icon-tags icon-large"></i>
+                
+                jekyll
+                
+                update
+                
+                helloword
+                
+            
+        </div>
+        <div class="post-meta">
+            <div class="post-meta-data">
+                <i class="icon-pencil icon-large"></i>
+                Nov 16, 2015
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div id="pagination">
+    <div class="pagenavi">
+        
+        <span> <i class="icon-chevron-left"></i></span>
+        
+        
+        
+        <a href="http://127.0.0.1:4000/page2">2</a>
+        
+        
+        
+        <a href="http://127.0.0.1:4000/page3">3</a>
+        
+        
+        
+        <a href="http://127.0.0.1:4000/page4">4</a>
+        
+        
+
+        
+        <a href="http://127.0.0.1:4000/page2"><i class="icon-chevron-right"></i></a>
+        
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+</body></html>
