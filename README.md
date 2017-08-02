@@ -1,7 +1,5 @@
 # laixintao.github.io
-这是我在Github的小站，主要用来展示一些项目的demo。
-点击[这里](http://laixintao.github.io/) 可以访问~
 
-也欢迎访问我的博客：http://kawabangga.com
+主要存放一些静态文件和展示DEMO。
 
-## enjoy~~
+中文博客： [htts://kawabangga.com](https://kawabangga.com)
