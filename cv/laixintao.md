@@ -1,8 +1,10 @@
 # 赖信涛
 
-目前在:上海
-电子邮件: laixintao1995@163.com
-网站: https://www.kawabangga.com
+- 目前在:上海
+- 电子邮件: laixintao1995@163.com
+- 网站: https://www.kawabangga.com
+- Github: https://github.com/laixintao
+- StackOverFlow: https://stackoverflow.com/users/6931919/scriptboy
 
 ## 工作经历 
 
@@ -45,8 +47,3 @@ Python Web开发.个人兼职时间为俱乐部做的户外旅行网站，拥有
 - 熟练使用Linux，学编程以来一直生活在终端中，以Vim Tmux Git为生
 - 熟练MarkDown格式，专业的文档撰写能力，写作能力极强，频繁更新博客
 - 无障碍英文读写
-
-## 参考资料
-Github: github.com/laixintao
-StackOverFlow: stackoverflow.com/users/6931919/scriptboy
-个人网站:https://kawabangga.com
