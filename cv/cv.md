@@ -30,10 +30,10 @@ Python Web开发.个人兼职时间为俱乐部做的户外旅行网站，拥有
 
 ## 教育 
 
-### 2013年9月 — 2017年6月 东华大学
+### 东华大学 软件工程 (2013年9月 — 2017年6月)
 在校期间，学习了操作系统，数据结构，算法等专业课程。专业课均分90以上，老师对我评价很高。对于有兴趣的课程我总是会超额完成作业。
 
-### 2016年3月 — 2016年9月 Reutlingen University
+### Reutlingen University Media and Communication Informatics (2016年3月 — 2016年9月 Exchange) 
 去德国劳特林根大学交换期间，学习了Mobile Computing，Distributed System，Data Management等课程。这段时间也去了很多欧洲国家旅行。收获很大。
 
 ## 兴趣爱好
