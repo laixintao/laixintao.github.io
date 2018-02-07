@@ -2,9 +2,9 @@
 
 - 目前在:上海
 - 电子邮件: laixintao1995@163.com
-- 网站: https://www.kawabangga.com
-- Github: https://github.com/laixintao
-- StackOverFlow: https://stackoverflow.com/users/6931919/scriptboy
+- 网站: [https://www.kawabangga.com](https://www.kawabangga.com)
+- Github: [https://github.com/laixintao](https://github.com/laixintao)
+- StackOverFlow: [https://stackoverflow.com/users/6931919/scriptboy](https://stackoverflow.com/users/6931919/scriptboy)
 
 ## 工作经历 
 
@@ -16,6 +16,10 @@
 
 Python Web开发.个人兼职时间为俱乐部做的户外旅行网站，拥有完整的CMS系统，用户报名活动、退款的流程，接入微信，支付宝，短信等接口。负责了阿里云服务器的部署，数据库维护等内容。(线上地址:www.ifenglv.com)
 
+### CSDN 特约翻译 (2015年9月 — 2016年12月)
+
+大学期间为CSDN提供业界的资讯，技术博客翻译等优质内容，在CSDN首页发布(有稿费)。来源以HackerNews为主。兼职期间产出大约三十万余字。最近在翻译一本书[《Python并行编程》](https://github.com/laixintao/python-parallel-programming-cookbook-cn)。
+
 ### 担路网 全栈 实习 (2016年11月 — 2017年3月)
 
 使用Python，Django做建站工具，个人负责预订系统的模块，用了angular， tastypie等技术。在前端用Angular实现了选座，订单等内容。
@@ -23,10 +27,6 @@ Python Web开发.个人兼职时间为俱乐部做的户外旅行网站，拥有
 ### 玻森数据 Python (2017年3月 - 至今)
 
 维护爬虫、Mongo数据库到ES的索引。负责新的数据模块上线，从爬虫抓取、清洗、索引到前端上线。
-
-### CSDN 特约翻译 (2015年9月 — 2016年12月)
-
-大学期间为CSDN提供业界的资讯，技术博客翻译等优质内容，在CSDN首页发布(有稿费)。来源以HackerNews为主。兼职期间产出大约三十万余字。最近在翻译一本书[《Python并行编程》](https://github.com/laixintao/python-parallel-programming-cookbook-cn)。
 
 ## 教育 
 
